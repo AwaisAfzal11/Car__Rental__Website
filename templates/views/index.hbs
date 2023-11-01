@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .card-container {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .card {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin: 10px;
+            padding: 10px;
+            width: 300px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        .card img {
+            width: 50%; /* Adjust the width as needed (medium size) */
+            height: auto;
+        }
+
+        .card h3 {
+            font-size: 1.5em;
+            margin: 10px 0;
+        }
+
+        .card p {
+            margin: 0;
+        }
+
+        .description {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    {{>navbar}}
+    <div class="card-container">
+        <div class="card">
+            <h3>Product 1</h3>
+            <div class="description">
+                <p>Price: $10</p>
+                <p>Description: This is the description of Product 1.</p>
+            </div>
+            <img src="image1.jpg" alt="Product 1">
+        </div>
+
+        <div class="card">
+            <h3>Product 2</h3>
+            <div class="description">
+                <p>Price: $20</p>
+                <p>Description: This is the description of Product 2.</p>
+            </div>
+            <img src="image2.jpg" alt="Product 2">
+        </div>
+
+        <div class="card">
+            <h3>Product 3</h3>
+            <div class="description">
+                <p>Price: $30</p>
+                <p>Description: This is the description of Product 3.</p>
+            </div>
+            <img src="image3.jpg" alt="Product 3">
+        </div>
+    </div>
+    {{>footer}}
+</body>
+</html>
